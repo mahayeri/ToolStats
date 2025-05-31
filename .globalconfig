@@ -1,0 +1,44 @@
+﻿is_global = true
+
+# Null-safety rules
+dotnet_diagnostic.CS8604.severity = warning  # Possible null reference argument
+dotnet_diagnostic.CS8618.severity = warning  # Non-nullable field must contain a non-null value
+dotnet_diagnostic.CS8602.severity = warning  # Dereference of a possibly null reference
+
+# Code quality rules
+dotnet_diagnostic.CA1819.severity = warning  # Properties should not return arrays
+dotnet_diagnostic.CA2007.severity = warning  # Consider calling ConfigureAwait on awaited tasks
+dotnet_diagnostic.CA1062.severity = warning  # Validate arguments of public methods
+dotnet_diagnostic.CA1716.severity = warning  # Identifiers should not match keywords
+dotnet_diagnostic.CA1054.severity = warning  # URI parameters should not be strings
+dotnet_diagnostic.CA1308.severity = warning  # Normalize strings to uppercase
+dotnet_diagnostic.CA2234.severity = warning  # Pass System.Uri objects instead of strings
+
+# Performance rules
+dotnet_diagnostic.CA1806.severity = warning  # Do not ignore method results
+dotnet_diagnostic.CA1822.severity = warning  # Mark members as static
+dotnet_diagnostic.CA1827.severity = warning  # Do not use Count() or LongCount() when Any() can be used
+dotnet_diagnostic.CA1829.severity = warning  # Use Length/Count property instead of Count()
+
+# Style and formatting rules
+dotnet_diagnostic.IDE0090.severity = warning # Simplify new expression
+dotnet_diagnostic.IDE0083.severity = warning # Use pattern matching
+dotnet_diagnostic.IDE0037.severity = warning # Use inferred member name
+dotnet_diagnostic.IDE0063.severity = warning # Use simple 'using' statement
+
+# Documentation rules - all disabled
+dotnet_diagnostic.SA0001.severity = none     # XML comment analysis disabled
+dotnet_diagnostic.SA1101.severity = none     # Prefix local calls with this
+dotnet_diagnostic.SA1200.severity = none     # Using directives placement
+dotnet_diagnostic.SA1516.severity = none     # Elements should be separated by blank line
+dotnet_diagnostic.SA1600.severity = none     # Elements should be documented
+dotnet_diagnostic.SA1601.severity = none     # Partial elements documentation
+dotnet_diagnostic.SA1602.severity = none     # Enumeration items documentation
+dotnet_diagnostic.SA1611.severity = none     # Parameter documentation
+dotnet_diagnostic.SA1615.severity = none     # Return value documentation
+dotnet_diagnostic.SA1618.severity = none     # Generic type parameter documentation
+dotnet_diagnostic.SA1623.severity = none     # Property summary documentation
+dotnet_diagnostic.SA1633.severity = none     # File header documentation
+dotnet_diagnostic.SA1642.severity = none     # Constructor documentation
+dotnet_diagnostic.SA1643.severity = none     # Destructor documentation
+dotnet_diagnostic.CS1591.severity = none     # Missing XML comment warning
