@@ -31,18 +31,92 @@ artifacts/
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*_wpftmp.csproj
+*.vspscc
+*.vssscc
+.builds
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+.idea/
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
 # NuGet Packages
 *.nupkg
 # NuGet Symbol Packages
 *.snupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+
+# Local development settings
+appsettings.Development.json
+appsettings.Local.json
+*.Development.json
+
+# Environment files
+.env
+.env.local
+.env.development
+
+# Windows & macOS specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
 
 # Others
 ~$*
 *~
-CodeCoverage/
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+node_modules/
+.sass-cache/
+_TemporaryGeneratedFile*
 
-# MSBuild Binary and Structured Log
-*.binlog
+# Backup & report files
+*.bak
+*.cache
+*.orig
+*.temp
 
 # MSTest test Results
 [Tt]est[Rr]esult*/
@@ -52,3 +126,15 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# wwwroot specific excludes
+wwwroot/lib/
+wwwroot/**/*.min.js
+wwwroot/**/*.min.css
+wwwroot/dist/
+wwwroot/temp/
+wwwroot/uploads/
+
+# Keep these files in git
+!wwwroot/favicon.png
+!wwwroot/app.css
